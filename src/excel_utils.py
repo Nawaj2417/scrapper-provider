@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 import asyncio
 from src.scraper_async import scrape_website
 
-BATCH_SIZE = 100
+BATCH_SIZE = 10
 
 def chunked(lst, size):
     for i in range(0, len(lst), size):
